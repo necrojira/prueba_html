@@ -1,0 +1,101 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #040404;
+}
+
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #141452;
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-links a:hover {
+  color: #ffffff;
+}
+
+/* Study plans banner styles */
+.study-plans-banner {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Courses section styles */
+.courses {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.course-item {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+  width: 300px;
+}
+
+.course-image {
+  width: 100%;
+  height: auto;
+}
+
+.course-content {
+  padding: 15px;
+}
+
+.course-content h2 {
+  color: #444;
+}
+
+.course-content p {
+  margin: 5px 0;
+}
+
+/* Footer styles */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .courses {
+    flex-direction: column;
+    align-items: center;
+  }
+}

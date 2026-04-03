@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examen de Colocación</title>
+    <link rel="stylesheet" href="/web/css/pb.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <img src="/web/img/logo.JPG" alt="Logo" class="logo" width="100">
+            <ul class="nav-links">
+                <li><a href="/web/index.html">Inicio</a></li>
+                <li><a href="/web/html/cs.html">Cursos</a></li>
+                <li><a href="/web/html/nt.html">Nosotros</a></li>
+                <li><a href="/web/html/ct.html">Contacto</a></li>
+                <li><a href="/web/html/ac.html">Acceder</a></li>
+                <li><a href="/web/html/ex.html">Examen de Colocación</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Examen de Colocación</h1>
+        <form id="placement-exam" action="/web/php/pb.php" method="POST">
+            <input type="hidden" name="matricula" value="<?php echo htmlspecialchars($_GET['matricula']); ?>" />
+            <ol>
+                <li>
+                    ¿Cómo se dice "perro" en inlglés?<br>
+                    <input type="radio" name="q1" value="a" required> Cat<br>
+                    <input type="radio" name="q1" value="b"> Dog<br>
+                    <input type="radio" name="q1" value="c"> Mouse<br>
+                    <input type="radio" name="q1" value="d"> Fish<br>
+                </li>
+                <li>
+                    Completa la frase: "i _ a student."<br>
+                    <input type="radio" name="q2" value="a" required> am<br>
+                    <input type="radio" name="q2" value="b"> is<br>
+                    <input type="radio" name="q2" value="c"> are<br>
+                    <input type="radio" name="q2" value="d"> be<br>
+                </li>
+                <li>
+                    "Yesterday, I _ to the store"<br>
+                    <input type="radio" name="q3" value="a" required> go<br>
+                    <input type="radio" name="q3" value="b"> gone<br>
+                    <input type="radio" name="q3" value="c"> went<br>
+                    <input type="radio" name="q3" value="d"> going<br>
+                </li>
+                <li>
+                    Can I park here?<br>
+                    <input type="radio" name="q4" value="a" required> Sorry, I did that<br>
+                    <input type="radio" name="q4" value="b"> It's the same place<br>
+                    <input type="radio" name="q4" value="c"> Only for half an hour<br>
+                </li>
+                <li>
+                    What colour will you paint the children’s bedroom?<br>
+                    <input type="radio" name="q5" value="a"> I hope it was right<br>
+                    <input type="radio" name="q5" value="b" required> We can't decide<br>
+                    <input type="radio" name="q5" value="c"> It wasn’t very difficult<br>
+                </li>
+                <li>
+                    I can't understand this email.<br>
+                    <input type="radio" name="q6" value="a" required> whould you like some help<br>
+                    <input type="radio" name="q6" value="b"> Don't you know<br>
+                    <input type="radio" name="q6" value="c"> I suppose you can<br>
+                </li>
+                <li>
+                    I'd like two tickets for tomorrow night.<br>
+                    <input type="radio" name="q7" value="a" required> How much did you play?<br>
+                    <input type="radio" name="q7" value="b"> Afternoon and evening.<br>
+                    <input type="radio" name="q7" value="c"> I'll just check for you.<br>
+                </li>
+                <li>
+                    Shall we go to the gym now?<br>
+                    <input type="radio" name="q8" value="a" required> I'm too tired<br>
+                    <input type="radio" name="q8" value="b"> It's very good<br>
+                    <input type="radio" name="q8" value="c"> Not at all<br>
+                </li>
+                <li>
+                    His eyes were _ bad that the could't read the number plate of the car in front.<br>
+                    <input type="radio" name="q9" value="a" required> such<br>
+                    <input type="radio" name="q9" value="b"> too<br>
+                    <input type="radio" name="q9" value="c"> so<br>
+                    <input type="radio" name="q9" value="d"> very<br>
+                </li>
+                <li>
+                    The company needs to decide _ and for all whats its position is on this point.<br>
+                    <input type="radio" name="q10" value="a" required> here<br>
+                    <input type="radio" name="q10" value="b"> once<br>
+                    <input type="radio" name="q10" value="c"> first<br>
+                    <input type="radio" name="q10" value="d"> finally<br>
+                </li>
+                <li>
+                    Don't put your cup on the _ of the table - someone will knock it off.<br>
+                    <input type="radio" name="q11" value="a" required> outside<br>
+                    <input type="radio" name="q11" value="b"> edge<br>
+                    <input type="radio" name="q11" value="c"> boundary<br>
+                    <input type="radio" name="q11" value="d"> border<br>
+                </li>
+                <li>
+                    It wasn't a bad crash and _ damage was done to my car<br>
+                    <input type="radio" name="q12" value="a" required> little<br>
+                    <input type="radio" name="q12" value="b"> small<br>
+                    <input type="radio" name="q12" value="c"> light<br>
+                    <input type="radio" name="q12" value="d"> mere<br>
+                </li>
+                <li>
+                    I'd rather you _ to her why we can't go.<br>
+                    <input type="radio" name="q13" value="a" required> would explain<br>
+                    <input type="radio" name="q13" value="b"> explained<br>
+                    <input type="radio" name="q13" value="c"> to explain<br>
+                    <input type="radio" name="q13" value="d"> will explain<br>
+                </li>
+                <li>
+                    Before making a decision, the leader considered all _ of the argument.<br>
+                    <input type="radio" name="q14" value="a" required> sides<br>
+                    <input type="radio" name="q14" value="b"> features<br>
+                    <input type="radio" name="q14" value="c"> perspectives<br>
+                    <input type="radio" name="q14" value="d"> shades<br>
+                </li>
+                <li>
+                    The new printer is recommended as being _ reliable.<br>
+                    <input type="radio" name="q15" value="a" required> greatly<br>
+                    <input type="radio" name="q15" value="b"> highly<br>
+                    <input type="radio" name="q15" value="c"> strongly<br>
+                    <input type="radio" name="q15" value="a"> readily<br>
+                </li>
+            </ol>
+            <button type="submit" id="submit-quiz">Enviar</button>
+            <a href="/web/html/ex.html" class="button">Regresar</a>
+        </form>
+        <div id="result"></div>
+    </main>
+    <footer>
+        <p>&copy; Escuela Mexicana Canadiense de Inglés</p>
+    </footer>
+</body>
+</html>

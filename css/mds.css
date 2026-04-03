@@ -1,0 +1,78 @@
+/* General */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden; /* Evitar desplazamientos horizontales */
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #141452;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Nosotros Section */
+.nt-container {
+  position: relative;
+  height: 100vh;
+  overflow: hidden; /* Evitar que el contenido salga del contenedor */
+}
+
+.nt-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+  filter: brightness(70%);
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(20, 20, 82, 0.9);
+  color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  z-index: 2;
+  max-width: 500px;
+  opacity: 0; /* Iniciar con opacidad 0 */
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Agregar transición para la opacidad y transformación */
+}
+
+/* Efecto hover */
+.nt-container:hover .text-overlay {
+  opacity: 1;
+  transform: translate(-50%, -45%); /* Ajustar transformación para darle un pequeño movimiento al hover */
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: #fff;
+}

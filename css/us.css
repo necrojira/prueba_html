@@ -1,0 +1,139 @@
+/* General */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.dashboard {
+    display: flex;
+    height: 100vh;
+}
+
+/* Barra lateral */
+.sidebar {
+    background-color: #001848;
+    color: white;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-icon {
+    background-color: #ccc;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.info-button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+/* Contenido principal */
+.main-content {
+    background-color: white;
+    flex: 1;
+    padding: 20px;
+    position: relative;
+}
+
+.exit-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    background-color: transparent;
+    border: 2px solid #141452;
+    color: #141452;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.notification {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 16px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.schedule-button,
+.plan-button,
+.delete-button {
+    background-color: #001848;
+    color: white;
+    border: none;
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.schedule-button:hover,
+.plan-button:hover,
+.delete-button:hover {
+    background-color: #003080; 
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #141452;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #003080;
+}
+
+.logout-button {
+    background-color: #001848;
+    color: white; 
+    border: none; 
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 120px; 
+    height: 50px; 
+    border-radius: 0; 
+}
+
+.logout-button:hover {
+    background-color: #003080; 
+}
+
+.welcome-container {
+    display: flex;      
+    align-items: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
